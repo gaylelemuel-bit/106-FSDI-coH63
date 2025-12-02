@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom page</title>
+   <link rel="stylesheet" href="./app.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <section id="getMethod"><strong>Task List</strong></section>
+        <section id="postMethod"><strong>Form</strong>
+        <div class="mb-3">
+            <label class="form-label" for="title">Title</label>
+            <input type="text" class="form-control" id="txtTitle">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="description">Description</label>
+            <textarea rows="3" class="form-control" id="txtDescription"></textarea>
+        </div>
+         <div class="mb-3">
+            <label class="form-label" for="color">Color</label>
+            <input type="color"  class="form-control" id="selColor">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="date">Date</label>
+            <input type="datetime-local" class="form-control" id="selDate">
+        </div>
+         <div class="mb-3">
+            <label class="form-label" for="status">Status</label>
+            <select class="form-control" id="selStatus">
+                <option value="New">New</option>
+                <option value="in progress">In progress</option>
+                <option value="blocked">blocked</option>
+                <option value="done">done</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="budget">Budget</label>
+            <input type="number" class="form-control" id="numBudget">
+        </div>
+        <div>
+        <button class="btn btn-primary" id="btnSave">Save</button>
+        </div>
+        
+
+        </section>
+       
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./Scripts/Task.js"></script>
+    <script src="./Scripts/app.js"></script>
+</body>
+
+</html>
